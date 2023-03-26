@@ -1,0 +1,101 @@
+@import url("https://fonts.googleapis.com/css2?family=Alkatra&display=swap");
+/* Reset CSS*/
+*,
+::before,
+::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style-type: none;
+    font-family: "Alkatra", cursive;
+}
+
+.main__container {
+    max-width: 1200px;
+    min-height: 100vh;
+    margin: 0 auto 0 auto;
+    background-color: beige;
+}
+.main__container h1 {
+    text-align: center;
+    padding: 30px 0;
+    font-size: 3rem;
+}
+/* Nav */
+nav {
+    display: block;
+    width: 140px;
+    margin: 0 auto 10px auto;
+    padding-top: 20px;
+}
+nav a {
+    font-size: 20px;
+    text-transform: uppercase;
+}
+nav a:last-child {
+    margin-left: 20px;
+}
+/* LEXIQUE */
+#lexique h1 {
+    text-align: center;
+    font-size: 40px;
+}
+
+#lexique > section {
+    max-width: 1200px;
+    margin: auto;
+}
+
+#lexique .mot {
+    border: 1px solid grey;
+    border-radius: 20px;
+    margin: 0 20px 20px 20px;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+#lexique .mot .down {
+    display: inline-block;
+}
+
+#lexique .mot .up {
+    display: none;
+}
+
+#lexique .mot.open .down {
+    display: none;
+}
+
+#lexique .mot.open .up {
+    display: inline-block;
+}
+
+#lexique .mot .titre {
+    padding: 10px 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background: #c8d6cf;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+#lexique .mot .definition {
+    padding: 10px 20px;
+    display: none;
+}
+
+#lexique .mot.open .definition {
+    padding: 10px 20px;
+    display: block;
+    background: #f4ca52;
+}
+
+/* img*/
+img {
+    display: block;
+    width: 30%;
+    margin: 10px auto 10px auto;
+}
